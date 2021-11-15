@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Marck+Script&family=Neucha&display=swap" rel="stylesheet">   
+        <title>Портфолио</title>
+    </head>
+<body>
+<header>
+    <h1>Елизавета Коченкова</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <polygon fill="white" points="0,100 50, 0 100,100"/>
+    </svg>
+</header>
+  
+  <section class="sec_1">
+    <div class="sec_1_row">
+        <div class="sec_1_block"><div class="sec_1_img"><img src="assets/img/lisa1.jpg"></div></div>
+        
+        <div class="sec_1_text"><h2>Лизаааааа</h2>Всегда восхищалась высокими девушками. Это очень красиво. Хотя Лиза говорит, что это ей не нравится. Но это очень круто! 
+            Всегда веселая и относится к вещам легко, это просто отличное качество в жизни. Хотя... может, мне кажестя, что она веселая...
+        </div>
+    </div>
+  </section>
+
+  <section class="sec_2">
+      <div class="sec_2_col">
+      <div class="sec_2_row">
+        <div class="sec_2_item1">
+            Лиза не скупится на комплименты. Говорит, как ты выглядишь в этой одежде, что не может быть неприятно. Спасибо, Лиза!
+        </div>
+        <div class="sec_2_img"></div>
+        <div class="sec_2_item1">
+            Лиза - самая крутая соседка по блоку. У нее замечательное воспитание и характер. С ней никаких конфликтов не было и не будет. зачем они? :)
+        </div>
+        </div>
+      </div>
+      <div class="sec_2_col">
+      <div class="sec_2_row">
+        <div class="sec_2_img2"></div>
+        <div class="sec_2_item1">
+            Лиза, оставайся такой же, какая ты есть. С холодной головой и расчетливым умом, который у тебя есть. Твои слова очень приятно слушать, мы тебя очень ценим!!!
+        </div>
+        <div class="sec_2_img3"></div>
+      </div>
+      </div>
+  </section>
+
+  <section class="sec_4">
+    <div class="slider">
+        <div class="item">
+            <img src="assets/img/slide1.jpg" alt="Первый слайд">
+            <div class="slideText">Посмотрите</div>
+        </div>
+    
+        <div class="item">
+            <img src="assets/img/slide3.jpg" alt="Второй слайд">
+            <div class="slideText">какая</div>
+        </div>
+    
+        <div class="item">
+            <img src="assets/img/slide2.jpg" alt="Третий слайд">
+            <div class="slideText">красотка!</div>
+        </div>
+    
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+        <a class="next" onclick="plusSlide()">&#10095;</a>
+    </div>
+    
+    <div class="slider-dots">
+        <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+        <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+        <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+    </div>
+  </section>
+
+  <footer>
+      <div class="footer_text">
+          Kamenko_2021 / Kochenkova
+      </div>
+  </footer>
+  
+<script src="script.js"></script>  
+</body>
+</html>

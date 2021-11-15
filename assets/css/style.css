@@ -1,0 +1,262 @@
+* {
+    margin:0;
+    padding:0;
+ }
+html{scroll-behavior: smooth;}
+
+body{
+     font-family: 'Marck Script', cursive;
+     /*font-family: 'Amatic SC', cursive;*/
+ }
+a{
+     text-decoration:none;
+     color:white;
+ }
+a:hover{
+     color:black;
+ }
+ 
+h1{
+     font-family: 'Marck Script', cursive;
+     text-shadow: 2px 4px white;
+ }
+ 
+h2{
+    font-family: 'Amatic SC', cursive;
+     font-size:25px;
+     line-height:2em;
+     margin-top:3%;
+     margin-bottom:3%;
+ }
+h1 {
+    padding: 100px 0;
+    font-size: 44px;
+    text-align: center;
+ }
+header {
+    position: relative;
+    height: 350px;
+    background:url(../img/phon.jpg)
+    no-repeat
+    center;}
+svg {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 10vw;
+}
+
+
+
+.sec_1_row{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.sec_1_block{
+    display:block;
+    width:370px;
+    height:450px;
+    background-color:rgb(180, 148, 209);
+    position:relative;
+    z-index:0;
+}
+.sec_1_img{
+    width:80%;
+    position:relative;
+    z-index:1;
+    right:-25%;
+    top:15%;
+
+}
+.sec_1_img img{
+    width:100%;
+}
+.sec_1_text{
+    width:25%;
+    margin-left:10%;
+    font-size:25px;
+}
+
+
+
+
+
+
+.sec_2{
+    margin:20% 5% 5% 5%;
+    border:3px;
+    border-style:groove;
+    border-color: rgb(152, 128, 240);
+    overflow:hidden;
+}
+.sec_2_row{
+    display:flex;
+    justify-content:center;
+
+    flex-basis:33,3%;
+    flex:1 1 0;
+}
+.sec_2_col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:1 1 0;
+}
+
+.sec_2_item1{
+    margin:5%;
+    padding:5%;
+    border:2px;
+    border-style:dotted;
+    border-color:khaki;
+    background-color:rgba(224, 158, 136, 0.514);
+
+    font-size:20px;
+    text-align:center;
+}
+
+.sec_2_img{
+    border:5px dotted rgb(224, 128, 253);
+    width:400px;
+    height:400px;
+    background:url(../img/lisa2.jpg)
+    no-repeat
+    center;
+}
+.sec_2_img2{
+    border:5px dotted rgb(224, 128, 253);
+    width:400px;
+    height:400px;
+    background:url(../img/lisa3.jpg)
+    no-repeat
+    center;
+}
+.sec_2_img3{
+    border:5px dotted rgb(224, 128, 253);
+    width:400px;
+    height:400px;
+    background:url(../img/lisa4.jpg)
+    no-repeat
+    center;
+}
+
+
+
+
+
+
+
+
+.sec_4{
+    margin:10% 0 10% 0;
+}
+
+/* Собственно сам слайдер */
+.slider{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    height: 700px;
+    margin-bottom: 15px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 700px;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+/* Кружочки */
+.slider-dots {
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+footer{
+    background:url(../img/footer.png)
+    no-repeat
+    center;
+}
+.footer_text{
+    color:white;
+    text-align:center;
+    text-shadow: 4px 4px #000;
+    font-size:30px;
+    padding:7%;
+}
